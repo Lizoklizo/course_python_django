@@ -1,0 +1,16 @@
+<!-- news/templates/news/create_news.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create News</title>
+</head>
+<body>
+    <h1>Create News</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Create News</button>
+    </form>
+</body>
+</html>
